@@ -1,0 +1,20 @@
+[
+    {
+        "image": "shark-tank-image.png",
+        "title": "Shark Tank",
+        "date": "March 28, 2023",
+        "description": "På \"Shark Tank\" arrangementet til UiA Nyskaping skilte Paral Dynamics, ledet av Alex og Peshang, seg ut. På en kveld full av flotte ideer, vant deres unike innovasjon dem to store priser - \"Beste Innovasjonshøyde\" og \"Publikums Favoritt\"."
+    },
+    {
+        "image": "arendal-uka.png",
+        "title": "Arendal's uka",
+        "date": "August 18, 2023",
+        "description": "På Arendalsuka belyste Rune Alexander Laursen, sammen med medgrunnlegger Peshang Alo, deres spennende reise. Med bakgrunn i dataingeniørarbeid og kunstig intelligens, identifiserte de mangler i verktøy for diabetesbehandling. Med utgangspunkt i Runes personlige erfaring med diabetes og deres kombinerte teknologiske ekspertise, utviklet de en unik algoritme som overgår eksisterende løsninger. Med støtte fra UiAs innovasjonsteam har deres innovasjon stort potensial for diabetesbehandling."
+    },
+    {
+        "image": "innovation-norway.png",
+        "title": "STUD-ENT Grant",
+        "date": "May 15, 2024",
+        "description": "Vi er glade for å kunne meddele at vi har blitt tildelt STUD-ENT-tilskudet fra Innovasjon Norge. Dette tilskuddet vil hjelpe oss å ta vårt innovative prosjekt til neste nivå. Read more about it <a href=\"https://www.uia.no/om-uia/fakultet/handelshoyskolen/aktuelt/to-millionar-til-studentbedrifter.html\" target=\"_blank\">here</a>."
+    }
+]
