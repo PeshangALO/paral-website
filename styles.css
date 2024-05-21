@@ -14,7 +14,7 @@ header {
 
 .nav-container {
     display: flex;
-    justify-content:space-around; /* Center the logo and navigation */
+    justify-content: space-around;
     align-items: center;
     padding: 0 20px;
     max-height: 60px;
@@ -23,13 +23,11 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Add some space between the logo and navigation */
 }
 
 .header-logo {
-    width: 120px;
+    width: 100px; /* Reduced size for smaller header */
     height: auto;
-    margin-right: 10px;
 }
 
 nav {
@@ -42,9 +40,16 @@ nav a {
     margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
 }
 
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Main Sections */
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -243,4 +248,104 @@ footer {
 
 .social-link:hover {
     color: #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide the menu by default */
+    }
+
+    nav a {
+        margin: 10px 0;
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active + nav {
+        display: flex; /* Show the menu when active */
+    }
+
+    .blog-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-image,
+    .blog-description {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .partners-container {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .map-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .mission-logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .learn-more {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .blog-description h2 {
+        font-size: 1.2em;
+    }
+
+    .blog-description p {
+        font-size: 0.9em;
+    }
+
+    .contact-info h1 {
+        font-size: 1.5em;
+    }
+
+    .company-details p {
+        font-size: 1em;
+    }
+
+    address {
+        font-size: 1em;
+    }
+}
+
+/* Ensure nav menu is clickable */
+nav.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }

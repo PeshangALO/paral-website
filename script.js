@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav a');
 
@@ -61,9 +60,17 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error('Error fetching blog data:', error));
 });
 
-// script.js
 document.addEventListener("DOMContentLoaded", function() {
     const currentYear = new Date().getFullYear();
     const copyrightElement = document.getElementById("copyright");
     copyrightElement.innerHTML = `&copy; ${currentYear} Paral Dynamics`;
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    mobileMenu.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
 });
