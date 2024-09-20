@@ -21,14 +21,11 @@
             </div>
 
             <ul id="desktop-menu">
-                
+            
                 <li><a class="nav_links" href="index.html">Hjemmeside</a></li>
-                <li><a class="nav_links" href="services.html">Tjenester</a>
-           <!--     </li>
-                li><a class="nav_links" href="customers.html">Kunder</a></li>
-                -->
-                <li><button id="om_oss" class ="navbutton"><a href="aboutus.html">Om oss</button></a></li>
-                <li><button id ="kontakt_oss" class ="navbutton"><a href="#contact_us">Kontakt oss</button></a></li>
+                <li><a class="nav_links" href="services.html">Tjenester</a></li>
+                <li><a href="aboutus.html"><button id="om_oss" class ="navbutton">Om oss</button></a></li>
+                <li><a href="#contact_us"><button id ="kontakt_oss" class ="navbutton">Kontakt oss</button></a></li>
             </ul>
         </nav>
 
@@ -75,7 +72,8 @@
         </div>
         <div class="container">
             <label for="email">Epostadresse</label>
-            <input type="email" class="form-input" id="email" name="email">
+                        <input type="email" class="form-input" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+
         </div>
         <div class="container">
             <label for="subject">Overskrift</label>
@@ -85,7 +83,7 @@
             <label for="message">Hva gjelder det?</label>
             <input type="text" class="form-input" id="message" name="message">
         </div>
-        <input type="submit" value="Send Message">
+        <input type="submit" value="Send Melding">
     </form>
     </section>
 

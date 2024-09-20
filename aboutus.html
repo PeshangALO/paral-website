@@ -195,7 +195,8 @@
         </div>
         <div class="container">
             <label for="email">Epostadresse</label>
-            <input type="email" class="form-input" id="email" name="email">
+                        <input type="email" class="form-input" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+
         </div>
         <div class="container">
             <label for="subject">Overskrift</label>
@@ -205,7 +206,7 @@
             <label for="message">Hva gjelder det?</label>
             <input type="text" class="form-input" id="message" name="message">
         </div>
-        <input type="submit" value="Send Message">
+        <input type="submit" value="Send Melding">
     </form>
     </section>
 
