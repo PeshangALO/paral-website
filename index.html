@@ -197,21 +197,21 @@
     <form onsubmit="sendEmail(); return false;">
         <div class="container"> 
             <label for="name">Navn/Selskap</label>
-            <input type="text" class="form-input" id="name" name="name">
+            <input type="text" class="form-input" id="name" name="name" required>
         </div>
         <div class="container">
             <label for="email">Epostadresse</label>
-            <input type="email" class="form-input" id="email" name="email">
+            <input type="email" class="form-input" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
         </div>
         <div class="container">
             <label for="subject">Overskrift</label>
-            <input type="message" class="form-input" id="subject" name="subject">
+            <input type="message" class="form-input" id="subject" name="subject" required>
         </div>
         <div class="container">
             <label for="message">Hva gjelder det?</label>
-            <input type="text" class="form-input" id="message" name="message">
+            <input type="text" class="form-input" id="message" name="message" required>
         </div>
-        <input type="submit" value="Send Message">
+        <input type="submit" value="Send Melding">
     </form>
     </section>
 
@@ -230,11 +230,11 @@
 <footer>
 
     <h3>&copy; 2024 Paral Development Company. All Rights Reserved.</h3>
-<!--  
+
     <p class="alex_mail"><a href="mailto:alex@paral.no">alex@paral.no </a></p>
 
     <div class="information_buttons">
-      <div class="dropdown">
+<!--        <div class="dropdown">
             <button class="dropbtn">&#11167; English</button>
             <div class="dropdown-content">
               <a href="#">Norwegian</a>
