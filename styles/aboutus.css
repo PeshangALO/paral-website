@@ -63,9 +63,10 @@
 #the-values .textbox{
     border: transparent;
     border-left: 2px solid var(--info-color);
-    border-radius: 1;
+    border-radius: 10px;
     background-color: transparent;
     margin: 1rem 1rem;
+    padding-left: 1rem;
 
     h5{
         font-weight: normal;
@@ -111,7 +112,7 @@
             width: auto;
             padding: 0;
             border-top: 1.3px solid var(--info-color);
-
+            padding-top: 0.5rem;
             }
         }
     }
@@ -131,8 +132,6 @@
 /* Project Process */
 
 #project_process{
-
-
     h2{
         margin-bottom: 5rem;
         font-size: 2.5rem;
@@ -154,6 +153,7 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        
     }
 
     .textbox{
@@ -161,6 +161,7 @@
     border-left: 1.3px solid var(--info-color);
     border-radius: 0;
     background-color: transparent;
+    padding-left: 1rem;
     width: 495px;
 
         h5{
@@ -235,6 +236,7 @@
                 .textbox{
                     border-top: 1.3px solid var(--info-color);
                     border-left: 0;
+                    padding-top: 1rem;
                 }
             }
         }
@@ -268,7 +270,7 @@
   
 
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     #project_process { 
         
         display: flex;
@@ -277,7 +279,7 @@
         
         h2{
             font-size: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             margin-top: 5rem;
         }
 
