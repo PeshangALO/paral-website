@@ -1,0 +1,300 @@
+#team_description {
+    margin-top: 50px;
+    gap: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    #team_description h1{
+        color: black;
+        font-size: 50px;
+        margin-bottom: 1rem;
+    }
+
+    #team_description  p{
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    #team_description  .description-wrapper{
+        margin: 0 2rem;
+        max-width: 42rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+#paral_team{
+    width: 31rem;
+}
+
+@media (max-width: 1000px){
+    #team_description{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 800px){
+    #paral_team{
+        display: none;
+    }
+    #team_description h1{
+        text-align: center;
+    }
+}
+
+
+/* -----------------------------*/
+/* -------- Hvorfor Paral? -----*/
+/* ---------------------------- */
+#the-values{
+    display: flex;
+    flex-direction: column;
+    margin: 7rem;
+}
+#the-values h2{
+        font-size: 2.5rem;
+        justify-content: flex-start;
+    }
+
+
+#the-values .textbox{
+    border: transparent;
+    border-left: 2px solid var(--info-color);
+    border-radius: 1;
+    background-color: transparent;
+    margin: 1rem 1rem;
+
+    h5{
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    p{
+        font-weight: bold;
+        padding-bottom: 1rem;
+        font-size: 20px
+    }
+
+    .horizontal-border{
+        display: none;
+    }
+}
+
+@media (max-width: 1600px) {
+    #the-values  { 
+        margin: 3rem;
+        h2{
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+        }
+    }  
+}
+
+    @media (max-width: 800px){
+       #the-values{ 
+
+        .textboxes{
+        display: flex;
+        flex-direction: column;
+        
+        }
+
+        h2{
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 1rem;
+        }
+        .textbox{
+            border: 0;
+            width: auto;
+            padding: 0;
+            border-top: 1.3px solid var(--info-color);
+
+            }
+        }
+    }
+
+@media(max-width: 400px){
+    #the-values{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/* Project Process */
+
+#project_process{
+
+
+    h2{
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-description-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+
+
+    .textbox-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .textbox{
+    border: transparent;
+    border-left: 1.3px solid var(--info-color);
+    border-radius: 0;
+    background-color: transparent;
+    width: 495px;
+
+        h5{
+        font-weight: normal;
+        margin-bottom: 5px;
+        font-size: 16px;
+        }
+        
+        p{
+        font-weight: bold;
+        padding-bottom: 1rem;
+        font-size: 15px;
+        }
+
+    }
+
+    img{
+        width: 35px;
+        height: 35px;
+
+    }
+}
+
+
+
+/* For smaller screens */
+    @media (max-width: 1500px) {
+      
+        #project_process{
+            margin: 0;
+
+            .project-description-wrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+
+            h2{
+                text-align: center;
+                font-size: 2rem;
+            }
+
+        }
+}
+
+
+@media(max-width: 1000px){
+
+    #project_process{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem 0;
+
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        .project-description-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0;
+
+            .textbox-wrap{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .textbox{
+                    border-top: 1.3px solid var(--info-color);
+                    border-left: 0;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    #project_process {
+        .project-description-wrapper { 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem 0;
+        }
+
+        img{
+            place-self: center;
+        }
+        h2{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .textbox-wrap{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}     
+  
+
+
+@media (max-width: 400px){
+    #project_process { 
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            margin-top: 5rem;
+        }
+
+        .project-description-wrapper{
+            padding: 0;
+
+            .textbox-wrap{
+                width: 90%;
+            
+                .textbox{
+                border-top: 1.3px solid var(--info-color);
+                border-left: 0;
+                width: auto;
+                }
+            }
+        }
+    }
+}
+
+
