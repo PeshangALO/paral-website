@@ -22,33 +22,34 @@ margin: 3rem 0 5rem;
     justify-content: center;
     gap: 40px;
     margin: 0 15rem;
+}
 
-    .textbox{
+    #the-offers .textbox{
         background-color: transparent;
         padding: 15px;
         border: 1px solid black;
         border-radius: 10px;
     }
     
-    p{
+    #the-offers p{
         font-weight: 500;
         font-size: 20px;
     }
 
-    .offer-description{
+    #the-offers .offer-description{
         display: flex;
-        .text-wrap{
+    }
+
+        #the-offers .offer-description .text-wrap{
             width: 50%;
             margin-top: 100px;
             padding-left: 10px;
             border-left: 1px solid var(--info-color);
         }
-    }
 
-    h5{
+    #the-offers h5{
         font-weight: 700;
     }
-}
 
 @media(max-width: 1200px){
     #the-offers{
@@ -74,16 +75,16 @@ margin: 3rem 0 5rem;
         flex-direction: column;
         gap: 10px;
         margin: 0 1rem;
+    }
      
-        h4{
+        #the-offers h4{
             font-size: 20px;
         }
 
-        p{
+        #the-offers p{
             font-size: 20px;
         }
 
     
-    }
 }
 
