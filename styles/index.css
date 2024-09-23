@@ -1,3 +1,5 @@
+/*Removed some unneccassry code. Improverd responsiveness of Reviuew section.*/
+/*Improved responsivness of #companyDescription and added img on smaller screens.*/
 #companyDescription {
     margin-top: 50px;
     display: flex;
@@ -5,69 +7,57 @@
     justify-content: space-evenly;
     align-items: center;
     color: var(--primary-color);
+}
 
-    h1{
-        font-size: 3rem;
+    #companyDescription h1{
+
+        font-size:3rem;
         margin-bottom: 1rem;
     }
 
-    p{
+    #companyDescription p{
         font-size: 1.2rem;
         padding-bottom: 10px;
         line-height: 1.4;
     }
 
-    img{
+    #companyDescription img{
         max-width: 80%;
     }
 
-    .description-wrapper{
+    #companyDescription .description-wrapper{
         margin: 0 2rem;
         max-width: 42rem;
         display: flex;
         flex-direction: column;
+    }
         
-        .body_btn{
-            width: 15rem;
+        #companyDescription .description-wrapper .body_btn{
+            display: flex;
+            justify-content: center;
+            max-width: 15rem;
         }
         
-    }
-}
 
 @media (max-width: 1200px) {
 #companyDescription {
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-
-    .paralHead {
-        display: none;  
-    }   
+    flex-direction: column;
+    gap: 0rem;
+    }  
 }
 
-}
 
 @media (max-width: 600px) {
-#companyDescription {
-    display: flex;
-    gap: 0;
-    h1{
-        text-align: center;
-        font-size: 2.5rem;
+    #companyDescription h1{
+        font-size: 2rem;
     }
-
-    p{
-        text-align: center;
-        margin: 0 1rem;
-    }
-
-    .body_btn{
-        margin-left: auto;
-    }
-}
 }  
 
-
+@media(max-width: 400px){
+    #companyDescription .description-wrapper a{
+        margin: 0 auto;
+    }
+}
 
 
 /* Our services */
@@ -78,30 +68,30 @@
     justify-content: center;
     color: var(--primary-color);
     font-family: var(--primary-font);
+}
 
-    h2{
+    #ourServices h2{
     font-size: 2.5rem;
     font-weight: bold;
     }
 
-    p{
+    #ourServices p{
     font-size: 1.2rem;
     padding-bottom: 10px;
-    }
+}
 
     @media(max-width: 800px){
-        h2{
+        #ourServices h2{
             justify-content: center;
         }
-        p{
+        #ourServices p{
             justify-content: center;
         }
-        .body_btn{
+        #ourServices .body_btn{
             justify-content: center;
         }
     }
 
-}
 
 
 /* Boxes of service */
@@ -111,9 +101,9 @@
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
+}
 
-
-.textboxes {
+    #serviceCategories .textboxes {
     display: grid;
     max-width: 100%;
     grid-template-columns: repeat(3, 460px);
@@ -123,21 +113,20 @@
 }
 /* For smaller screens */
 @media (max-width: 1400px) {
-    .textboxes { 
+    #serviceCategories .textboxes { 
         grid-template-columns: repeat(2, 1fr); 
     }
 }
     @media (max-width: 1000px) {
-        .textboxes { 
+        #serviceCategories .textboxes { 
             grid-template-columns: 1fr;
             grid-template-rows: repeat(6, 1fr); 
             padding: 0 20px;
         }
         
     }   
-}
 
-.textbox{
+    #serviceCategories .textbox{
     border: 1.3px solid var(--primary-color);
     border-radius: 10px;
     padding: 10px;
@@ -145,18 +134,18 @@
     font-size: 1.5rem;
     font-family: var(--primary-font);
     color: var(--primary-color);
+}
 
-    h5{
+    #serviceCategories .textbox h5{
         font-weight: normal;
         padding-top: 5px;
         padding-bottom: 10px;
     }
-    p{
+    #serviceCategories .textbox p{
         font-weight: bold;
         padding-bottom: 1rem;
         font-size: 1.7rem;
     }
-}
 
 /* Programming languages */
 
@@ -165,47 +154,47 @@
     flex-direction: column;
     line-height: 1.4;
     gap: 3rem;
-.text-box-wrapper{
+}
+    #prog_languages .text-box-wrapper{
     display: flex;
     justify-content: space-evenly;
 }
 
-    h2{
+#prog_languages h2{
         display: flex;
         justify-content: center;
         grid-column: span 6;
         font-size: 2rem;
     }
 
-    .logo-text-box {
+    #prog_languages .logo-text-box {
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     }
 
-    img{
+    #prog_languages img{
         justify-content: center;
         align-content: center;
     }
 
-    p{
+    #prog_languages p{
     padding-top: 20px;
     font-weight: 600;
     text-align: center;
     }
 
-    mark{
+    #prog_languages mark{
     font-weight: normal;
     background-color: transparent;
     color: #525252ab;
     }
 
-    .image-background{
+    #prog_languages .image-background{
     background-color:rgba(167, 167, 167, 0.226);
     border-radius: 100%
     }
-}
 
 @media (max-width: 1400px){
     #prog_languages{
@@ -227,9 +216,9 @@
     #prog_languages h2{
         font-size: 1.5rem;
     }
-    #prog_languages .text-box-wrapper{
-display: flex;
-flex-direction: column;
+        #prog_languages .text-box-wrapper{
+    display: flex;
+    flex-direction: column;
 }
 }
 
@@ -242,9 +231,10 @@ flex-direction: column;
     display: grid;
     grid-template-rows: 100px 1fr;
     justify-content: center;
-
+}
+    
     /* Section title (Kundeuttalelser) */
-    h2{
+    #customerReviews h2{
         padding-bottom: 3rem;
         font-family: var(--primary-font);
         font-size: 30px;
@@ -252,14 +242,14 @@ flex-direction: column;
     }
 
 
-        .reviewboxes{
+    #customerReviews .reviewboxes{
         display: flex;
         justify-content: center;
         gap: 5rem;
         height: 100%;
         }
 
-        .review-textbox{
+        #customerReviews .review-textbox{
         display: grid;
         grid-template-columns: 35px 1fr 100px;
         grid-template-rows: 1fr 1fr 1fr;
@@ -268,13 +258,14 @@ flex-direction: column;
         padding: 10px;
         background-color: var(--tertiary-color);
         border-radius: 5px;     
-        width: 33rem;
+        max-width: 50rem;
+    }   
 
-            img{
+        #customerReviews .review-textbox img{
                 border-radius: 100%;
-                width: 35px;
+                max-width: 35px;
             }
-            h5{
+            #customerReviews .review-textbox h5{
                 padding-top: 6px;
                 padding-left: 7px;
                 font-size: 15px;
@@ -282,23 +273,21 @@ flex-direction: column;
                 line-height: 1.5;
             }
 
-            h6{
+            #customerReviews .review-textbox h6{
                 grid-column: span 3;
                 font-size: 15px;
             }
 
-            p{
+            #customerReviews .review-textbox p{
                 grid-column: span 3;
                 font-weight: 500;
             }
 
-            #star_rating{
+            #customerReviews .review-textbox #star_rating{
                 padding-top: 5px;
                 border-radius: 0%;
-                width: 90px;
+                max-width: 90px;
             }
-    }
-}   
 
     @media (max-width: 1300px) {
 
@@ -306,18 +295,11 @@ flex-direction: column;
             display: flex;
             flex-direction: column;
             align-items: center;        
-            .reviewboxes{
+        }
+            #customerReviews .reviewboxes{
                 flex-direction: column;
                 gap: 2rem;
-                
-                .review-textbox{
-                    width: 50rem;
-                }
-            
-            }
-
-        }
-
+            }  
 }
 
 
@@ -325,31 +307,24 @@ flex-direction: column;
     @media (max-width: 900px) {
        #customerReviews{
             flex-direction: column;
-        .reviewboxes{
+            }
+            #customerReviews .reviewboxes{
             justify-content: center;
             gap: 1rem;
-            .review-textbox{
-                width: 30rem;
+        }
+
+}
+
+    @media(max-width: 500px){          
+            #customerReviews .reviewboxes h2{
+                margin-left: 1rem;
             }
-        }
-    }
-}
-
-    @media(max-width: 500px){
-    #customerReviews{
-        .reviewboxes{
-                   
-        h2{
-            margin-left: 1rem;
-        }
-
-        .review-textbox{
-            grid-template-rows: 1fr; 
-            width: 20rem;
-            gap: 1rem;
-        }
-    }
-}
+            
+            #customerReviews .reviewboxes .review-textbox{
+                grid-template-rows: 1fr; 
+                gap: 1rem;
+            }
+        
 }
 
 

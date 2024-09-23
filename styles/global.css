@@ -1,7 +1,7 @@
-@import "/styles/Individual\ Page\ CSS/aboutus.css";
-@import "/styles/Individual\ Page\ CSS/index.css";
-@import "/styles/Individual\ Page\ CSS/services.css";
-@import "/styles/Interactive_Elements/hamburger_menu.css";
+@import "/styles/aboutus.css";
+@import "/styles/index.css";
+@import "/styles/services.css";
+@import "/styles/hamburger_menu.css";
 
 :root{
     --primary-color: #0E1E36;
@@ -21,6 +21,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 html{
@@ -55,42 +56,45 @@ p, h1, h2, h3, h4, h5, h6{
     align-items: center;
     text-align: center;
     margin-top: 5rem;
-    h1{
+}
+    #email-success h1{
         font-size: clamp(2rem, 4rem, 5rem);
     }
 
-}
 
 
+/*-------------------------------------*/
+/*------------Logo & Navbar------------*/
+/*-------------------------------------*/
 
-/* Logo & Navbar */
 
 
 nav{
     display: flex;
     padding-top: 10px;
+}
 
-#company{
+nav #company{
     justify-content: flex-start;
     margin-left: 10px;
     margin-right: auto;
 }
 
-#navLogo{
+nav #navLogo{
     justify-content: flex-start;
     max-width: 100%;
     width: 5rem;
     cursor: pointer;
 }
 
-#companyName{
+nav #companyName{
 max-width: 100%;
 width: 8rem;
 padding-bottom: 10px;
 cursor: pointer;
 }
 
-.navbutton{
+nav .navbutton{
     cursor: pointer;
     margin: 10px;
     width: 120px;
@@ -101,21 +105,21 @@ cursor: pointer;
     border-color: transparent;
 }
 
-.navbutton, a{
+nav .navbutton, a{
     color: white;
 }
 
 
 
-#om_oss{
+nav #om_oss{
     padding: 8px 20px;
 }
 
-#kontakt_oss{
+nav #kontakt_oss{
     padding: 8px 10px;
 }
 
-.nav_links, li{
+nav .nav_links, li{
     list-style: none;
     display: inline-block;
     font-family:"inter", sans-serif;  
@@ -126,20 +130,20 @@ cursor: pointer;
     line-height: 1.4rem;
     }
 
-.nav-links, li a:hover{
+nav .nav-links, li a:hover{
     color: var(--primary-color);
     font-weight: bold;
     transform: scale(1.1);
 }
 
-.nav-links, li button a:hover{
+nav .nav-links, li button a:hover{
     color: white;
     font-weight: normal;
 }
-}
 
-
-/* Address */
+/*---------------------------------*/
+/*-------------Address-------------*/
+/*---------------------------------*/
 
 .company_address{
     display: flex;
@@ -182,10 +186,10 @@ cursor: pointer;
         justify-content: center;
     }
 
-    .address > h2{
+    .address h2{
         font-size: 30px;
     }
-    .address > h4 {
+    .address h4 {
         font-size: 20px;
     }
 
@@ -204,8 +208,9 @@ cursor: pointer;
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: var(--primary-font);
+}
 
-    h3{
+    #contact_us h3{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -213,15 +218,16 @@ cursor: pointer;
         margin-top: 3rem;
         font-size: 30px;
     }
-
-    form{
-        margin-top: 5rem;
     
-        label{
+    #contact_us form{
+        margin-top: 5rem;
+    }
+    
+       form label{
 
             font-weight: 700;
         }
-        .form-input {
+        #contact_us form .form-input {
             width: 520px;
             padding: 8px 10px 10px;
             margin: 10px 0;
@@ -230,7 +236,8 @@ cursor: pointer;
             border-radius: 10px;
             box-sizing: border-box;
           }
-          input[type=submit] {
+
+          #contact_us form input[type=submit] {
             width: 240px;
             background-color: black;
             color: white;
@@ -243,10 +250,9 @@ cursor: pointer;
             font-size: 1rem;
           }
 
-          input[type=checkbox]{
+          #contact_us form input[type=checkbox]{
             margin: 1rem 0 1rem;
           }
-    }
 
     .container{
         margin-top: 1.5rem;
@@ -257,7 +263,6 @@ cursor: pointer;
         align-items: center;
         gap: 1rem;
     }
-}
 
 @media (max-width: 1000px) {
     #contact_us {
@@ -265,24 +270,24 @@ cursor: pointer;
         display: flex;
         flex-direction: column;
         font-family: var(--primary-font);
-    
-        h3{
+    }
+       #contact_us h3{
             text-align: center;
         }
 
-        form{
+        #contact_us form{
             margin: 0 10px;
-
-            input[type="submit"]{
+        }
+            #contact_us form input[type="submit"]{
                 width: 100%;
                 
             }
                    
-            label{
+            #contact_us form label{
                 font-weight: 700;
             }
 
-              .form-input{
+            #contact_us form .form-input{
                 width: 100%;
                 margin: 10px 0;
                 display: block;
@@ -291,7 +296,7 @@ cursor: pointer;
                 box-sizing: border-box;
               }
 
-              input[type=submit] {
+              #contact_us form input[type=submit] {
                 width: 240px;
                 background-color: black;
                 color: white;
@@ -304,26 +309,26 @@ cursor: pointer;
                 font-size: 1rem;
             }
 
-        }
-    }
 }
+    
+
 
 @media (max-width: 600px){
     #contact_us{
         margin-top: 0;
-    form{
-        input[type=submit]{
+    }
+
+        form input[type=submit]{
             display: block;
             padding: 14px 20px;
             margin: 3rem auto;
-        }
-    }  
+            }
+          
 }
-}
 
-
-/* Social Media */
-
+/*---------------------------------*/
+/*----------Social Media-----------*/
+/*---------------------------------*/
 
 .social_media{
     background-color: var(--secondary-color);
@@ -332,39 +337,41 @@ cursor: pointer;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
+}
 
-    h2{
+    .social_media h2{
         font-size: 40px;
     }
 
-    h5{
+    .social_media h5{
         font-size: 16px;
         font-weight: 300;
         text-align: center;
     }
 
-    div{
+    .social_media div{
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    img{
+    .social_media img{
         height: 20px;
     }
-}
 
 
 @media (max-width: 1000px) {
     .social_media{
         padding-top: 5rem;
-        h2{
+    }
+        .social_media h2{
             font-size: 30px;
-        }
     }
 }
+/*-----------------------------------*/
+/*---------------Footer--------------*/
+/*-----------------------------------*/
 
-/* Footer */
 footer{
     background-color: var(--primary-color);
     color: white;
@@ -372,23 +379,22 @@ footer{
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: 1fr 1fr;
+}
 
-    h3{
+   footer h3{
         font-weight: 300;
         color: #539BE1;
         margin-top: 3rem;
         text-align: center;
     }
 
-    h3, .alex_mail{
+    footer h3, .alex_mail{
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
     }
 
-    a{
+    footer a{
         color: white;
     }
-
-}

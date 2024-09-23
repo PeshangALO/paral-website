@@ -26,7 +26,7 @@
     }
 
 #paral_team{
-    width: 31rem;
+    max-width: 31rem;
 }
 
 @media (max-width: 1000px){
@@ -40,6 +40,7 @@
     #paral_team{
         display: none;
     }
+
     #team_description h1{
         text-align: center;
     }
@@ -67,54 +68,50 @@
     background-color: transparent;
     margin: 1rem 1rem;
     padding-left: 1rem;
-
-    h5{
+}
+    #the-values .textbox h5{
         font-weight: normal;
         font-size: 1rem;
     }
-    p{
+    #the-values .textbox p{
         font-weight: bold;
         padding-bottom: 1rem;
         font-size: 20px
     }
 
-    .horizontal-border{
+    #the-values .textbox .horizontal-border{
         display: none;
     }
-}
+
 
 @media (max-width: 1600px) {
     #the-values  { 
         margin: 3rem;
-        h2{
+    } 
+        #the-values h2{
             margin-top: 5rem;
             margin-bottom: 2rem;
-        }
-    }  
+        }   
 }
 
     @media (max-width: 800px){
-       #the-values{ 
-
-        .textboxes{
+        #the-values .textboxes{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;   
         }
 
-        h2{
+        #the-values h2{
             text-align: center;
             font-size: 30px;
             margin-bottom: 1rem;
         }
-        .textbox{
+        #the-values .textbox{
             border: 0;
             width: auto;
             padding: 0;
             border-top: 1.3px solid var(--info-color);
             padding-top: 0.5rem;
-            }
-        }
+            }        
     }
 
 @media(max-width: 400px){
@@ -122,24 +119,24 @@
         display: flex;
         flex-direction: column;
         margin: 0;
-        h2{
+    }
+        #the-values h2{
             font-size: 1.5rem;
             margin-bottom: 2rem;
         }
-    }
 }
 
 /* Project Process */
 
-#project_process{
-    h2{
+
+    #project_process h2{
         margin-bottom: 5rem;
         font-size: 2.5rem;
         display: flex;
         justify-content: center;
     }
 
-    .project-description-wrapper{
+    #project_process .project-description-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -148,7 +145,7 @@
 
 
 
-    .textbox-wrap{
+    #project_process .textbox-wrap{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -156,34 +153,33 @@
         
     }
 
-    .textbox{
+    #project_process .textbox{
     border: transparent;
     border-left: 1.3px solid var(--info-color);
     border-radius: 0;
     background-color: transparent;
     padding-left: 1rem;
     width: 495px;
+}
 
-        h5{
+    #project_process .textbox  h5{
         font-weight: normal;
         margin-bottom: 5px;
         font-size: 16px;
         }
         
-        p{
+        #project_process .textbox  p{
         font-weight: bold;
         padding-bottom: 1rem;
         font-size: 15px;
         }
 
-    }
 
-    img{
+    #project_process img{
         width: 35px;
         height: 35px;
 
     }
-}
 
 
 
@@ -192,19 +188,19 @@
       
         #project_process{
             margin: 0;
+        }
 
-            .project-description-wrapper{
+            #project_process .project-description-wrapper{
                 display: grid;
                 grid-template-columns: 1fr 1fr; 
                 grid-template-rows: 1fr 1fr 1fr 1fr;
             }
 
-            h2{
+            #project_process h2{
                 text-align: center;
                 font-size: 2rem;
             }
 
-        }
 }
 
 
@@ -216,56 +212,55 @@
         justify-content: center;
         align-items: center;
         gap: 3rem 0;
+    }
 
-        h2{
+        #project_process h2{
             font-size: 1.5rem;
             margin-bottom: 0;
         }
 
-        .project-description-wrapper{
+        #project_process .project-description-wrapper{
             display: flex;
             flex-direction: column;
             gap: 2rem;
             padding: 0;
+        }
 
-            .textbox-wrap{
+            #project_process .project-description-wrapper .textbox-wrap{
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
+            }
 
-                .textbox{
+                #project_process .project-description-wrapper .textbox-wrap .textbox{
                     border-top: 1.3px solid var(--info-color);
                     border-left: 0;
                     padding-top: 1rem;
                 }
-            }
-        }
-    }
 
 
 }
 
 @media (max-width: 800px) {
-    #project_process {
-        .project-description-wrapper { 
+        #project_process .project-description-wrapper { 
         display: flex; 
         flex-direction: column;
         justify-content: center;
         gap: 3rem 0;
         }
 
-        img{
+       #project_process img{
             place-self: center;
         }
-        h2{
+        #project_process h2{
             text-align: center;
             font-size: 1.5rem;
         }
-        .textbox-wrap{
+        #project_process .textbox-wrap{
             display: flex;
             flex-direction: column;
         }
-    }
+
 }     
   
 
@@ -276,27 +271,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
         
-        h2{
+        #project_process h2{
             font-size: 1.5rem;
             margin-bottom: 1rem;
             margin-top: 5rem;
         }
 
-        .project-description-wrapper{
+        #project_process .project-description-wrapper{
             padding: 0;
+        }
 
-            .textbox-wrap{
+            #project_process .project-description-wrapper .textbox-wrap{
                 width: 90%;
+            }
             
-                .textbox{
+                #project_process .project-description-wrapper .textbox-wrap .textbox{
                 border-top: 1.3px solid var(--info-color);
                 border-left: 0;
                 width: auto;
                 }
-            }
-        }
-    }
 }
 
 
