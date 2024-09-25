@@ -1,17 +1,9 @@
 #section-title {
 text-align: center;
-font-size: 2rem;   
-margin: 3rem 0 5rem;
+font-size: clamp(1.5rem, 2rem, 3rem);   
+margin: 3rem 0;
 }
     
-@media (max-width: 800px){
-    #section-title{
-        font-size: 1.5rem;
-    }
-}
-
-
-
 
 #the-offers{
     margin-top: 10rem;
@@ -36,9 +28,6 @@ margin: 3rem 0 5rem;
         font-size: 20px;
     }
 
-    #the-offers .offer-description{
-        display: flex;
-    }
 
         #the-offers .offer-description .text-wrap{
             width: 50%;

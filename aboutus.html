@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paral Dynamic spesialiserer på å forvandle ideer til kraftulle digitale løsninger, ved hjelp av avansert AI, maskinlæring og big data-analyser.">
+    <meta name="keywords" content="AI, maskinlæring, big data, digital solutions, digitalisering, Paral Dynamic, IT-konsultasjon">
+    <meta name="author" content="Paral Dynamic">
     <title>Om oss</title>
-    <link rel="icon" type="image/x-icon" href="./Images/ParalLogo/SmallLogo.svg">
-
+<link rel="icon" type="image/x-icon" id="title-icon" href="./Images/ParalLogo/Paral_head_white.svg">
     <link rel="stylesheet" type="text/css" href="./styles/global.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/aboutus.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/hamburger_menu.css"/>
@@ -13,37 +15,38 @@
 <body>
     <header>
         <nav id="desktop-nav">
-            <div id="company">
-                <a href="index.html">
-                <img id="navLogo" src="./Images/ParalLogo/ParalLogo.png" alt="Paral Dynamic"/>
-                <img id="companyName" src="./Images/ParalLogo/ParalText.png" alt="Paral Dynamic"/>
-            </a>
+            <div alt="Company logo and company name: Paral Dynamic.">
+                <a href="homepage.html">
+                <img id="navLogo" src="./Images/ParalLogo/ParalLogo.png" alt="Paral Dynamic Bedriftlogo"/>
+                <img id="companyName" src="./Images/ParalLogo/ParalText.png" alt="Text: Paral Dynamic"/>
+                </a>
             </div>
-            <ul id="desktop-menu">
-                <li><a class="nav_links" href="index.html">Hjemmeside</a></li>
-                <li><a class="nav_links" href="services.html">Tjenester</a></li>
-                <li><button id="om_oss" class ="navbutton"><a href="aboutus.html">Om oss</button></a></li>
-                <li><button id ="kontakt_oss" class ="navbutton"><a href="#contact_us">Kontakt oss</button></a></li>
-            </ul>
-        </nav>
+  <ul id="desktop-menu">
+    <li><a href="homepage.html" class="navbutton">Hjemmeside</a></li>
+    <li><a href="services.html" class="navbutton">Tjenester</a></li>
+    <li><a href="aboutus.html" class="navbutton">Om oss</a></li>
+    <li><a href="#contact_us" class="navbutton">Kontakt oss</a></li>  
+</ul>
+    </nav>
 
-<div class="off-screen-menu">
-    <ul>
-        <li><a class="nav_links" href="index.html">Hjemmeside</a></li>
-        <li><a class="nav_links" href="services.html">Tjenester</a></li>
-        <li><a class="nav_links" href="aboutus.html">Om oss</a></li>
-        <li><a class="nav_links" href="#contact_us">Kontakt oss</a></li>
-    </ul>
-</div>       
         <nav class="hamburger-parent">
-            <a href="index.html"><h1>Paral Dynamic</h1> </a>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-</header>
+            <a href="homepage.html"><img src="./Images/ParalLogo/paral_logo_transparent_white_onlyhead.png"> <p>Paral Dynamic</p></a>
+            <button class="hamburger-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+        
+          <div id="mobile-menu" class="off-screen-menu" hidden>
+            <ul>
+              <li><a class="nav-links" href="homepage.html">Hjemmeside</a></li>
+              <li><a class="nav-links" href="services.html">Tjenester</a></li>
+              <li><a class="nav-links" href="aboutus.html">Om oss</a></li>
+              <li><a class="nav-links" href="#contact_us">Kontakt oss</a></li>
+            </ul>
+          </div>
+        </header>
 
 <section id="team_description">
     <div class="description-wrapper">
@@ -63,25 +66,21 @@
         <h2>Hvorfor Paral Dynamic?</h2>
     <div class="textboxes">
         <div class="textbox">
-          
             <h5>Tilpasning til dine behov</h5>
             <p>Hos Paral Dynamic forstår vi at hver virksomhet er unik. Derfor leverer vi skreddersydde løsninger som er spesifikt utviklet for å møte dine behov og utfordringer. 
                 Vi jobber tett med deg for å sikre at løsningen er tilpasset både dine teknologiske krav og forretningsmål.</p>
         </div>
     <div class="textbox">
- 
         <h5>Specialist Team</h5>
         <p>Vårt team består av høyt kompetente og lidenskapelige utviklere som er eksperter innen AI, maskinlæring og big data. 
             Vi kombinerer teknisk dyktighet med kontinuerlig læring for å sikre at vi alltid tilbyr innovative, fremtidsrettede løsninger.</p>
     </div>
-    <div class="textbox">
-      
+    <div class="textbox">    
         <h5>IT-sikkerhet</h5>
         <p>Sikkerhet står sentralt i alt vi gjør. Vi implementerer robuste sikkerhetsløsninger som beskytter dine systemer og data mot trusler,
              samtidig som vi holder oss oppdatert på de nyeste standardene og beste praksisene innen IT-sikkerhet</p>
     </div>
-    <div class="textbox">
-  
+    <div class="textbox"> 
         <h5>Dedikerte oppdateringer og oppfølging</h5>
         <p>Vi tror på langvarig samarbeid, derfor følger vi opp hver leveranse med jevnlige oppdateringer og kontinuerlig support. 
             Du kan stole på oss for proaktiv oppfølging, slik at løsningene dine alltid er optimaliserte og oppdaterte for å møte fremtidige behov.</p>
@@ -92,8 +91,7 @@
 <section id="project_process">
     <h2>Hvordan ser et prosjekt med Paral Dynamic ut?</h2>
 <div class="project-description-wrapper">
-
-     <div class="textbox-wrap top-row item-1">
+     <div class="textbox-wrap">
         <img src="./Images/Icons/Project Process/Purchase Order.png">
         <div class="textbox">
             <h5>Innledende konsultasjon og behovsavklaring</h5>
@@ -102,7 +100,7 @@
         </div>
     </div>
 
-    <div class="textbox-wrap top-row item-2">
+    <div class="textbox-wrap">
         <img src="./Images/Icons/Project Process/Web Development.png">
         <div class="textbox">
             <h5>Analyse og prosjektplanlegging</h5>
@@ -111,7 +109,7 @@
         </div>
     </div>
 
-    <div class="textbox-wrap top-row item-3">
+    <div class="textbox-wrap">
         <img src="./Images/Icons/Project Process/People.png">
     <div class="textbox">
         <h5>Tilbudspresentasjon og avklaring</h5>
@@ -121,7 +119,7 @@
             </div>
         </div>
 
-    <div class="textbox-wrap item-4">
+    <div class="textbox-wrap">
         <img src="./Images/Icons/Project Process/Project.png">
         <div class="textbox">
             <h5>Oppstart og teamallokering</h5>
@@ -131,7 +129,7 @@
         </div>
     </div>
 
-    <div class="textbox-wrap item-5">
+    <div class="textbox-wrap">
         <img src="./Images/Icons/Project Process/Group Task.png">
         <div class="textbox">
             <h5>Løpende Kommunikasjon og Oppfølging</h5>
@@ -141,7 +139,7 @@
         </div>
     </div>
 
-    <div class="textbox-wrap item-6">
+    <div class="textbox-wrap">
         <img src="./Images/Icons/Project Process/Deployment.png">
         <div class="textbox">
             <h5>Leveranse og implementering</h5>
@@ -152,7 +150,7 @@
         </div>
     </div>
 
-    <div class="textbox-wrap item-7">
+    <div class="textbox-wrap">
         <img src="./Images/Icons/Project Process/Sustainability.png">
         <div class="textbox">
             <h5>Langisktig vedlikehold og optimalisering</h5>
@@ -225,7 +223,8 @@
 </footer>
 
 
-<script src="../JavaScript/hamburgermenu.js"></script>
+<script src="/JavaScript/hamburgermenu.js"></script>
+<script src="/JavaScript/activeButton.js"></script>
 <script type="text/javascript"
 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
