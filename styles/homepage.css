@@ -1,5 +1,3 @@
-/*Removed some unneccassry code. Improverd responsiveness of Reviuew section.*/
-/*Improved responsivness of #companyDescription and added img on smaller screens.*/
 #companyDescription {
     margin-top: 50px;
     display: flex;
@@ -10,7 +8,6 @@
 }
 
     #companyDescription h1{
-
         font-size:3rem;
         margin-bottom: 1rem;
     }
@@ -50,6 +47,7 @@
 @media (max-width: 600px) {
     #companyDescription h1{
         font-size: 2rem;
+        
     }
 }  
 

@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paral Dynamic spesialiserer på å forvandle ideer til kraftulle digitale løsninger, ved hjelp av avansert AI, maskinlæring og big data-analyser.">
+    <meta name="keywords" content="AI, maskinlæring, big data, digital solutions, digitalisering, Paral Dynamic, IT-konsultasjon">
+    <meta name="author" content="Paral Dynamic">
     <title>Paral Dynamic</title>
-    <link rel="icon" type="image/x-icon" href="./Images/ParalLogo/SmallLogo.svg">
-
+    <link rel="icon" type="image/x-icon" id="title-icon" href="./Images/ParalLogo/Paral_head_white.svg">
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/homepage.css" />
     <link rel="stylesheet" type="text/css" href="./styles/hamburger_menu.css" />
 
 
@@ -15,58 +17,58 @@
 <body>
     <header>
         <nav id="desktop-nav">
-            <div id="company">
-                <a href="index.html">
-                <img id="navLogo" src="./Images/ParalLogo/ParalLogo.png" alt="Paral Dynamic"/>
-                <img id="companyName" src="./Images/ParalLogo/ParalText.png" alt="Paral Dynamic"/>
-            </a>
+            <div alt="Company logo and company name: Paral Dynamic.">
+                <a href="homepage.html">
+                <img id="navLogo" src="./Images/ParalLogo/ParalLogo.png" alt="Paral Dynamic Bedriftlogo"/>
+                <img id="companyName" src="./Images/ParalLogo/ParalText.png" alt="Text: Paral Dynamic"/>
+                </a>
             </div>
-
-            <ul id="desktop-menu">
-                <li><a class="nav_links" href="index.html">Hjemmeside</a></li>
-                <li><a class="nav_links" href="services.html">Tjenester</a></li>
-                <li><button id="om_oss" class ="navbutton"><a href="aboutus.html">Om oss</button></a></li>
-                <li><button id ="kontakt_oss" class ="navbutton"><a href="#contact_us">Kontakt oss</button></a></li>
-            </ul>
+  <ul id="desktop-menu" role="menu">
+        <li><a href="homepage.html" class="navbutton">Hjemmeside</a></li>
+        <li><a href="services.html" class="navbutton">Tjenester</a></li>
+        <li><a href="aboutus.html" class="navbutton">Om oss</a></li>
+        <li><a href="#contact_us" class="navbutton">Kontakt oss</a></li>
+  </ul>
         </nav>
 
-<div class="off-screen-menu">
-    <ul>
-        <li><a class="hamburger-links" href="index.html">Hjemmeside</a></li>
-        <li><a class="hamburger-links" href="services.html">Tjenester</a></li>
-        <li><a class="hamburger-links" href="aboutus.html">Om oss</a></li>
-        <li><a class="hamburger-links" href="#contact_us">Kontakt oss</a></li>
-    </ul>
-</div>       
         <nav class="hamburger-parent">
-           <a href="index.html"><h1>Paral Dynamic</h1> </a>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-</header>
-<section id="companyDescription">
+            <a href="homepage.html"><img src="./Images/ParalLogo/paral_logo_transparent_white_onlyhead.png"> <p>Paral Dynamic</p></a>            <button class="hamburger-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+        
+          <div id="mobile-menu" class="off-screen-menu" hidden>
+            <ul>
+              <li><a class="nav-links" href="homepage.html">Hjemmeside</a></li>
+              <li><a class="nav-links" href="services.html">Tjenester</a></li>
+              <li><a class="nav-links" href="aboutus.html">Om oss</a></li>
+              <li><a class="nav-links" href="#contact_us">Kontakt oss</a></li>
+            </ul>
+          </div>
+        </header>
+
+<section id="companyDescription" alt="En beskrivelse av Paral Dynamic.">
         <div class="description-wrapper">
             <h1> Paral Dynamic </h1>
             <p>Vi spesialiserer oss på å forvandle ideer til kraftfulle digitale løsninger, med tjenester innen avansert AI, maskinlæring og big data-analyser. 
-                Vi samarbeider tett med våre kunder for å levere skreddersydde løsninger som møter deres unike behov og hjelper dem med å nå sine mål. 
-                Med sterk tilknytting til AI. Kompetansemiljøet i Grimstad er vi perfekt plassert for å levere verdi. 
+                Vi samarbeider tett med våre kunder for å skape skreddersydde løsninger som møter deres unike behov og hjelper dem med å nå sine mål. 
+                Med sterk tilknytting til AI. I Kompetansemiljøet i Grimstad er vi perfekt plassert for å levere verdi. 
                 Vårt ekspertteam er klare til å utvikle de perfekte produktene som driver din virksomhet fremover.</p>
-                <a href="aboutus.html"><button class="body_btn"> Lær mer om oss </button></a>
+                <button class="body_btn" onclick="location.href='aboutus.html'"> Lær mer om oss </button>
             </div>
-            <img class="paralHead" src="./Images/ParalLogo/ParalLogo.png" alt="Paral Dynamic"/>
+            <img class="paralHead" src="./Images/ParalLogo/ParalLogo.png" alt="Paral Dynamic Bedriftlogo"/>
 </section>
 <section id="ourServices">
     <div>
         <h2> Våre Tjenester </h2>
         <p>Vi spesialiserer oss på skreddersydde tjenester innen AI,<br>
          maskinlæring, big data og sanntidssystemer.</p>
-         <a href="services.html"><button class="body_btn"> Vis Mer </button></a>
+         <button class="body_btn" onclick="location.href='services.html'"> Vis Mer </button>
     </div>
 </section>
-<section id="serviceCategories" class="services">
+<section id="serviceCategories" class="services" alt="Hvilke tjenester tilbyr Paral Dynamic?">
     <div class="textboxes">
         <div class="textbox">
             <h5>Kunstig Intelligens</h5>
@@ -108,7 +110,7 @@
 </section>
 
 
-<section alt="Programmeringsspråk" id="prog_languages">
+<section alt="Programmeringsspråk" id="prog_languages" alt="En oversikt over programmeringsspråk Paral Dynamic kan jobbe.">
     <h2> Programmeringsspråk </h2>
     <div class="text-box-wrapper">
         <div class="logo-text-box">
@@ -150,7 +152,7 @@
     </div>
 </section>
 
-<section id="customerReviews">
+<section id="customerReviews" alt="Kundeomtalelser fra tidligere kunder av Paral Dynamic.">
         <h2>Kundeuttalelser</h2>
     <div class="reviewboxes">
         <!---
@@ -163,10 +165,10 @@
             </p>
             <h6>-Andreas Madsen, Daglig Leder i GADR.</h6>
         </div>-->
-        <div class="review-textbox">
+        <div class="review-textbox" alt="Anmeldelse fra Vigi Systems.">
             <img src="./Images/OtherCompanyLogos/Vigi Systems.jfif" alt="GADR logo">
             <h5>Vigi Systems</h5>
-            <img id="star_rating" src="./Images/Icons/star_rating.svg" alt="Customer 5 star rating"/>
+            <img id="star_rating" src="./Images/Icons/star_rating.svg" alt="En kundes 5 stjerne-anmeldelse"/>
             <p>Jeg kom til Paral Dynamic med behov for å utvikle en mobilapplikasjon, og deres faglige kompetanse gjorde dem til den perfekte partneren. De hjalp oss med å gå fra idé til ferdig produkt, og vi er svært fornøyd med resultatet.
                  </p>
                 <h6>-Robert Sach, Daglig Leder i Vigi Systems.</h6>
@@ -238,7 +240,9 @@
 </footer>
 
 
-<script src="../JavaScript/hamburgermenu.js"></script>
+
+<script src="/JavaScript/hamburgermenu.js"></script>
+<script src="/JavaScript/activeButton.js"></script>
 <script type="text/javascript"
 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -250,7 +254,6 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   });
 })();
 </script>
-
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 @import "/styles/aboutus.css";
-@import "/styles/index.css";
+@import "/styles/homepage.css";
 @import "/styles/services.css";
 @import "/styles/hamburger_menu.css";
 
@@ -21,7 +21,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 html{
@@ -69,29 +68,25 @@ p, h1, h2, h3, h4, h5, h6{
 
 
 
-nav{
-    display: flex;
-    padding-top: 10px;
+li{
+    list-style: none;
+    font-family:"inter", sans-serif;  
+    display: inline-block;
 }
 
-nav #company{
-    justify-content: flex-start;
-    margin-left: 10px;
-    margin-right: auto;
+#desktop-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav #navLogo{
-    justify-content: flex-start;
-    max-width: 100%;
     width: 5rem;
-    cursor: pointer;
 }
 
 nav #companyName{
-max-width: 100%;
-width: 8rem;
-padding-bottom: 10px;
-cursor: pointer;
+    width: 8rem;
+    margin-bottom: 1rem;
 }
 
 nav .navbutton{
@@ -101,44 +96,28 @@ nav .navbutton{
     border-radius: 20px;
     font-size: 1rem;
     font-weight: 500;
-    background-color: var(--primary-color);
+    background-color: transparent;
     border-color: transparent;
+    padding: 8px 15px;
 }
 
-nav .navbutton, a{
+nav .navbutton:hover{
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.2s;
+}
+
+nav .active{
+    background-color: var(--primary-color);
     color: white;
 }
 
-
-
-nav #om_oss{
-    padding: 8px 20px;
-}
-
-nav #kontakt_oss{
-    padding: 8px 10px;
-}
-
-nav .nav_links, li{
-    list-style: none;
-    display: inline-block;
-    font-family:"inter", sans-serif;  
-    margin-right: 1rem;
+nav a{
     color: black;
-    font-size: 1.2rem;
-    display: inline-block;
-    line-height: 1.4rem;
-    }
-
-nav .nav-links, li a:hover{
-    color: var(--primary-color);
-    font-weight: bold;
-    transform: scale(1.1);
 }
 
-nav .nav-links, li button a:hover{
+nav .navbutton a:hover{
     color: white;
-    font-weight: normal;
 }
 
 /*---------------------------------*/
