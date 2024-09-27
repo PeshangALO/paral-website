@@ -1,29 +1,40 @@
 #section-title {
-text-align: center;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
 font-size: clamp(1.5rem, 2rem, 3rem);   
 margin: 3rem 0;
 }
-    
+
+#section-title img{
+    max-width: 80%;
+}
 
 #the-offers{
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 1;
     justify-content: center;
     gap: 40px;
     margin: 0 15rem;
 }
 
     #the-offers .textbox{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
         background-color: transparent;
         padding: 15px;
         border: 1px solid black;
         border-radius: 10px;
     }
+
+    #the-offers img{
+        max-width: 34px;
+    }
     
     #the-offers p{
+        margin-top: 0.5rem;
         font-weight: 500;
         font-size: 20px;
     }
@@ -38,6 +49,7 @@ margin: 3rem 0;
 
     #the-offers h5{
         font-weight: 700;
+        font-size: 20px;
     }
 
 @media(max-width: 1200px){
@@ -47,6 +59,10 @@ margin: 3rem 0;
 }
 
 @media(max-width: 800px){
+    #section-title{
+        flex-direction: column;
+    }
+
     #the-offers{
         margin: 0 5rem;
     }
@@ -74,6 +90,8 @@ margin: 3rem 0;
             font-size: 20px;
         }
 
-    
+    #section-title h1{
+        font-size: 2.5rem;
+    }
 }
 
