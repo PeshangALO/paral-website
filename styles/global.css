@@ -41,13 +41,14 @@ p, h1, h2, h3, h4, h5, h6{
     background-color: var(--primary-color);
     font-family: var(--primary-font);
     margin-top: 15px;
-    padding: 10px 30px;
-    border-radius: 5px;
+    padding: 14px 4rem;
+    border-radius: 7px;
     border-color: transparent;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: white;
-    max-width: 13rem;
+    max-width: 15rem;
+    white-space: nowrap;
 }
 
 #email-success{
@@ -192,12 +193,12 @@ nav .navbutton a:hover{
 }
 
     #contact_us h3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        place-self: center;
         flex-wrap: wrap;
         margin-top: 3rem;
-        font-size: 30px;
+        font-size: 50px;
+        max-width: 36rem;
     }
     
     #contact_us form{
@@ -252,9 +253,10 @@ nav .navbutton a:hover{
         flex-direction: column;
         font-family: var(--primary-font);
     }
-       #contact_us h3{
-            text-align: center;
-        }
+
+    #contact_us h3 {
+        font-size: 40px;
+    }
 
         #contact_us form{
             margin: 0 10px;
@@ -299,12 +301,17 @@ nav .navbutton a:hover{
         margin-top: 0;
     }
 
+#contact_us h3{
+    font-size: 25px;
+}
+
         form input[type=submit]{
             display: block;
             padding: 14px 20px;
             margin: 3rem auto;
             }
           
+
 }
 
 /*---------------------------------*/
