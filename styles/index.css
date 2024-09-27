@@ -1,4 +1,4 @@
-#companyDescription {
+#company-description {
     margin-top: 50px;
     display: flex;
     gap: 5rem;
@@ -7,37 +7,36 @@
     color: var(--primary-color);
 }
 
-    #companyDescription h1{
+    #company-description h1{
         font-size:3rem;
         margin-bottom: 1rem;
     }
 
-    #companyDescription p{
+    #company-description p{
         font-size: 1.2rem;
         padding-bottom: 10px;
         line-height: 1.4;
     }
 
-    #companyDescription img{
+    #company-description img{
         max-width: 80%;
     }
 
-    #companyDescription .description-wrapper{
+    #company-description .description-wrapper{
         margin: 0 2rem;
         max-width: 42rem;
         display: flex;
         flex-direction: column;
     }
         
-        #companyDescription .description-wrapper .body_btn{
+        #company-description .description-wrapper .body-button{
             display: flex;
             justify-content: center;
-            max-width: 15rem;
         }
         
 
 @media (max-width: 1200px) {
-#companyDescription {
+#company-description {
     flex-direction: column;
     gap: 0rem;
     }  
@@ -45,47 +44,50 @@
 
 
 @media (max-width: 600px) {
-    #companyDescription h1{
+    #company-description h1{
         font-size: 2rem;
         
     }
 }  
 
 @media(max-width: 400px){
-    #companyDescription .description-wrapper a{
+    #company-description .description-wrapper a{
         margin: 0 auto;
     }
 }
 
 
 /* Our services */
-#ourServices{
+#our-services{
     text-align: center;
-    padding-top: 100px;
+    margin-top: 10rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: var(--primary-color);
     font-family: var(--primary-font);
 }
 
-    #ourServices h2{
+    #our-services h2{
     font-size: 2.5rem;
     font-weight: bold;
     }
 
-    #ourServices p{
+    #our-services p{
     font-size: 1.2rem;
     padding-bottom: 10px;
 }
 
+
     @media(max-width: 800px){
-        #ourServices h2{
+        #our-services h2{
             justify-content: center;
         }
-        #ourServices p{
+        #our-services p{
             justify-content: center;
         }
-        #ourServices .body_btn{
+        #our-services .body-button{
             justify-content: center;
         }
     }
@@ -94,14 +96,14 @@
 
 /* Boxes of service */
 
-#serviceCategories{
+#service-categories{
     padding-top: 50px;
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
 }
 
-    #serviceCategories .textboxes {
+    #service-categories .textboxes {
     display: grid;
     max-width: 100%;
     grid-template-columns: repeat(3, 460px);
@@ -109,14 +111,16 @@
     grid-column-gap: 30px;
     padding-bottom: 40px;
 }
+
+
 /* For smaller screens */
 @media (max-width: 1400px) {
-    #serviceCategories .textboxes { 
+    #service-categories .textboxes { 
         grid-template-columns: repeat(2, 1fr); 
     }
 }
     @media (max-width: 1000px) {
-        #serviceCategories .textboxes { 
+        #service-categories .textboxes { 
             grid-template-columns: 1fr;
             grid-template-rows: repeat(6, 1fr); 
             padding: 0 20px;
@@ -124,7 +128,7 @@
         
     }   
 
-    #serviceCategories .textbox{
+    #service-categories .textbox{
     border: 1.3px solid var(--primary-color);
     border-radius: 10px;
     padding: 10px;
@@ -134,12 +138,12 @@
     color: var(--primary-color);
 }
 
-    #serviceCategories .textbox h5{
+    #service-categories .textbox h5{
         font-weight: normal;
         padding-top: 5px;
         padding-bottom: 10px;
     }
-    #serviceCategories .textbox p{
+    #service-categories .textbox p{
         font-weight: bold;
         padding-bottom: 1rem;
         font-size: 1.7rem;
@@ -147,55 +151,55 @@
 
 /* Programming languages */
 
-#prog_languages{
+#prog-languages{
     display: flex;
     flex-direction: column;
     line-height: 1.4;
     gap: 3rem;
 }
-    #prog_languages .text-box-wrapper{
+    #prog-languages .text-box-wrapper{
     display: flex;
     justify-content: space-evenly;
 }
 
-#prog_languages h2{
+#prog-languages h2{
         display: flex;
         justify-content: center;
         grid-column: span 6;
         font-size: 2rem;
     }
 
-    #prog_languages .logo-text-box {
+    #prog-languages .logo-text-box {
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     }
 
-    #prog_languages img{
+    #prog-languages img{
         justify-content: center;
         align-content: center;
     }
 
-    #prog_languages p{
+    #prog-languages p{
     padding-top: 20px;
     font-weight: 600;
     text-align: center;
     }
 
-    #prog_languages mark{
+    #prog-languages mark{
     font-weight: normal;
     background-color: transparent;
     color: #525252ab;
     }
 
-    #prog_languages .image-background{
+    #prog-languages .image-background{
     background-color:rgba(167, 167, 167, 0.226);
     border-radius: 100%
     }
 
 @media (max-width: 1400px){
-    #prog_languages{
+    #prog-languages{
         padding: 0;
     }
 
@@ -203,7 +207,7 @@
 
 
 @media (max-width: 1000px) {
-#prog_languages .text-box-wrapper{
+#prog-languages .text-box-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -211,10 +215,10 @@
 }
 
 @media(max-width: 400px){
-    #prog_languages h2{
+    #prog-languages h2{
         font-size: 1.5rem;
     }
-        #prog_languages .text-box-wrapper{
+        #prog-languages .text-box-wrapper{
     display: flex;
     flex-direction: column;
 }
@@ -223,7 +227,7 @@
 
 /* Customer Reviews */
 
-#customerReviews{
+#customer-reviews{
     margin-top: 10rem;
     font-family: var(--primary-font);
     display: grid;
@@ -232,7 +236,7 @@
 }
     
     /* Section title (Kundeuttalelser) */
-    #customerReviews h2{
+    #customer-reviews h2{
         padding-bottom: 3rem;
         font-family: var(--primary-font);
         font-size: 30px;
@@ -240,14 +244,14 @@
     }
 
 
-    #customerReviews .reviewboxes{
+    #customer-reviews .reviewboxes{
         display: flex;
         justify-content: center;
         gap: 5rem;
         height: 100%;
         }
 
-        #customerReviews .review-textbox{
+        #customer-reviews .review-textbox{
         display: grid;
         grid-template-columns: 35px 1fr 100px;
         grid-template-rows: 1fr 1fr 1fr;
@@ -259,11 +263,11 @@
         max-width: 50rem;
     }   
 
-        #customerReviews .review-textbox img{
+        #customer-reviews .review-textbox img{
                 border-radius: 100%;
                 max-width: 35px;
             }
-            #customerReviews .review-textbox h5{
+            #customer-reviews .review-textbox h5{
                 padding-top: 6px;
                 padding-left: 7px;
                 font-size: 15px;
@@ -271,17 +275,17 @@
                 line-height: 1.5;
             }
 
-            #customerReviews .review-textbox h6{
+            #customer-reviews .review-textbox h6{
                 grid-column: span 3;
                 font-size: 15px;
             }
 
-            #customerReviews .review-textbox p{
+            #customer-reviews .review-textbox p{
                 grid-column: span 3;
                 font-weight: 500;
             }
 
-            #customerReviews .review-textbox #star_rating{
+            #customer-reviews .review-textbox #star_rating{
                 padding-top: 5px;
                 border-radius: 0%;
                 max-width: 90px;
@@ -289,12 +293,12 @@
 
     @media (max-width: 1300px) {
 
-        #customerReviews{
+        #customer-reviews{
             display: flex;
             flex-direction: column;
             align-items: center;        
         }
-            #customerReviews .reviewboxes{
+            #customer-reviews .reviewboxes{
                 flex-direction: column;
                 gap: 2rem;
             }  
@@ -303,10 +307,10 @@
 
 
     @media (max-width: 900px) {
-       #customerReviews{
+       #customer-reviews{
             flex-direction: column;
             }
-            #customerReviews .reviewboxes{
+            #customer-reviews .reviewboxes{
             justify-content: center;
             gap: 1rem;
         }
@@ -314,11 +318,11 @@
 }
 
     @media(max-width: 500px){          
-            #customerReviews .reviewboxes h2{
+            #customer-reviews .reviewboxes h2{
                 margin-left: 1rem;
             }
             
-            #customerReviews .reviewboxes .review-textbox{
+            #customer-reviews .reviewboxes .review-textbox{
                 grid-template-rows: 1fr; 
                 gap: 1rem;
             }
