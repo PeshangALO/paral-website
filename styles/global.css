@@ -37,15 +37,17 @@ p, h1, h2, h3, h4, h5, h6{
 }
 
 
-.body_btn{
+.body-button{
     background-color: var(--primary-color);
+    font-family: var(--primary-font);
     margin-top: 15px;
-    padding: 10px 25px;
+    padding: 10px 30px;
     border-radius: 5px;
     border-color: transparent;
     cursor: pointer;
     font-size: 1.2rem;
     color: white;
+    max-width: 13rem;
 }
 
 #email-success{
@@ -124,7 +126,7 @@ nav .navbutton a:hover{
 /*-------------Address-------------*/
 /*---------------------------------*/
 
-.company_address{
+.company-address{
     display: flex;
     margin-top: 10rem;
     justify-content: center;
@@ -150,7 +152,7 @@ nav .navbutton a:hover{
 
 
 @media (max-width: 1000px) {
-    .company_address {
+    .company-address {
         display: flex;
         flex-direction: column;
         align-items: center;
