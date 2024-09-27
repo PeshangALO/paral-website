@@ -2,13 +2,13 @@
     margin-top: 50px;
     gap: clamp(0rem, 3rem, 5rem);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
     #team_description h1{
         color: black;
-        font-size: clamp(20px, 40px, 50px);
+        font-size: 3rem;
         margin-bottom: 1rem;
     }
 
@@ -46,6 +46,11 @@
         max-width: 18rem;
         justify-content: center;
     }
+
+    #team_description h1{
+        font-size: 2.5rem;
+    }
+
 }
 
 /* -----------------------------*/
@@ -57,12 +62,12 @@
     margin: 7rem;
 }
 #the-values h2{
-        font-size: 2.5rem;
+        font-size: 3rem;
         justify-content: flex-start;
     }
 
 .textboxes{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 #the-values .textbox{
@@ -102,9 +107,14 @@
 }
 
     @media (max-width: 800px){
+        #the-values{
+            margin: 1rem;
+            padding: 0;
+        }
+
         #the-values .textboxes{
         display: flex;
-        flex-direction: column;   
+        flex-direction: column;
         }
 
         #the-values h2{
@@ -113,18 +123,19 @@
             margin-bottom: 1rem;
         }
         #the-values .textbox{
-            border: 0;
-            width: auto;
+            border-left: 0;
             padding: 0;
+            margin: 0;
             border-top: 1.3px solid var(--info-color);
             padding-top: 0.5rem;
             }        
     }
 
 @media(max-width: 400px){
-    #the-values{
-        margin: 0;
+    #the-values h5{
+        text-align: center;
     }
+
         #the-values h2{
             font-size: 1.5rem;
             margin: 5rem 0 0;
