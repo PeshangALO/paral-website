@@ -48,8 +48,8 @@ function closeMenu(){
         hamburgerMenu.setAttribute("aria-expanded", "false");
         mobileMenu.hidden = true;
         mobileMenu.classList.remove("active");
+        hamburgerMenu.classList.remove("active");
 }
 
 });
-
 
