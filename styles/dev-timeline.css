@@ -1,0 +1,122 @@
+.project-dev-header{
+max-width: 30rem;
+margin: 3rem auto 5rem;
+text-align: center;
+}
+
+.project-dev-header h1{
+    font-size: 50px;
+}
+
+@media(max-width: 600px){
+    .project-dev-header h1{
+        font-size: 30px;
+    }
+}
+
+
+/*----------------------------------*/
+/*----------------Phase-------------*/
+/*----------------------------------*/
+
+.project-dev-body{
+    margin: 8rem 0;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project-dev-body h2{
+    text-align: center;
+    grid-column: span 3;
+    font-size: 50px;
+}
+
+.phase-wrapper{
+    text-align: center;
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    place-items: center;
+}
+
+.img-wrapper{
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+
+@media(max-width: 600px){
+    .project-dev-body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+.project-dev-body h2{
+        font-size: 30px;
+    }
+}
+
+/*----------------------------------*/
+/*----------------Feedback-----------*/
+/*----------------------------------*/
+
+.customer-feedback{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.feedback-wrapper h1{
+    font-size: 50px;
+}
+
+/*----------------------------------*/
+/*--------------Dev-pic-------------*/
+/*----------------------------------*/
+
+.development-pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.dev-pic-wrapper{
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.dev-pic-wrapper img{
+    max-width: 40rem;
+}
+
+.picture-description{
+    padding: 1rem 0.5rem;
+    background: white;
+}
+
+
+
+
+
+@media(max-width: 1400px){
+    .development-pictures{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 800px){
+    .dev-pic-wrapper img{
+        max-width: 30rem;
+    }
+}
+
+@media(max-width: 500px){
+    .dev-pic-wrapper img{
+        max-width: 19rem;
+    }
+}

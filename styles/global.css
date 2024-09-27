@@ -2,6 +2,8 @@
 @import "/styles/index.css";
 @import "/styles/services.css";
 @import "/styles/hamburger_menu.css";
+@import "/styles/our-customers.css";
+@import "/styles/dev-timeline.css";
 
 :root{
     --primary-color: #0E1E36;
@@ -47,7 +49,7 @@ p, h1, h2, h3, h4, h5, h6{
     cursor: pointer;
     font-size: 1.25rem;
     color: white;
-    max-width: 15rem;
+    max-width: 17rem;
     white-space: nowrap;
 }
 
