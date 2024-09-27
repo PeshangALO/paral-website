@@ -11,3 +11,9 @@ function sendEmail(){
         alert("Failed to send messsage. Please try again later.")
     });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.getElementById("copyright");
+    copyrightElement.innerHTML = ` <h3> &copy; ${currentYear} Paral Development Company. All Rights Reserved. </h3>`;
+});

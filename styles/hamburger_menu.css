@@ -125,10 +125,6 @@
         top: 50%;
         transform: translate(-50%, -50%) rotate(-45deg);
     }
-
-    .nav-links:focus{
-        text-decoration: underline;
-    }
 }
 
 @media (max-width: 800px){
