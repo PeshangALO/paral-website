@@ -176,6 +176,15 @@ margin-top: 3rem;
 
     .delivery-wrapper{
        border: none;
+       flex-direction: column;
+       padding: 0;
+       margin-bottom: 3rem;
+    }
+
+    .delivery-wrapper img{
+
+        max-width: 10rem;
+        object-fit: cover;
     }
 
     .more-deliveries-button{
