@@ -185,8 +185,10 @@ nav a{
 #contact_us{
     background-color: var(--secondary-color);
     margin-top: 5rem;
+    padding-bottom: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
     font-family: var(--primary-font);
 }
 
@@ -238,11 +240,12 @@ form .form-input {
         transition: all 0.2s;
     }
 
-.custom-select-wrapper{
-    border-color: red;
-    border-radius: 10px;
+.custom-select-wrapper select{
     font-family: var(--primary-font);
+    font-size: 16px;
 }
+
+
 
 @media (max-width: 1000px) {
     #contact_us {
@@ -315,7 +318,6 @@ form .form-input {
 
 .social_media{
     background-color: var(--secondary-color);
-    padding-top: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,6 +337,9 @@ form .form-input {
         height: 20px;
     }
 
+    #move-social-media{
+        transition: all 0.2s;
+    }
 
 @media (max-width: 1000px) {
     .social_media{

@@ -22,55 +22,61 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const dropdown = document.getElementById("subject");
 const moveContent = document.getElementById("move-content");
+const socialMediaMove = document.getElementById("move-social-media");
 const label = document.querySelector("label[for='subject']");
 
-let expanded = false; 
+let expanded = false;
 
-function expandDropDown(){
-    const dropDownHeight = dropdown.offsetHeight; 
-    
-    if(!expanded){
-    expanded = true;
-    moveContent.style.marginTop = `${dropDownHeight + 130}px`;
+// Expand or collapse the dropdown
+function toggleDropDown(state) {
+    const dropDownHeight = dropdown.offsetHeight;
+    if (state !== undefined) {
+        expanded = state;
     } else {
-    expanded = false;
-    moveContent.style.marginTop = "0px";
+        expanded = !expanded;
+    }
+
+    if (expanded) {
+        moveContent.style.transform = `translateY(${dropDownHeight + 100}px)`; // Expand
+        socialMediaMove.style.paddingTop = `${dropDownHeight + 90}px`
+    } else {
+        moveContent.style.transform = "translateY(0px)"; // Collapse
+        socialMediaMove.style.paddingTop = "0px";
     }
 }
 
+// Unified event listener
+function unifiedEventListener(event) {
+    const target = event.target;
 
-label.addEventListener("click", (event) => {
-    event.preventDefault();
-    dropdown.focus(); 
-});
-
-dropdown.addEventListener("click", ()=> {
-        expandDropDown();
-});
-
-dropdown.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " "){ 
-        expandDropDown();
-    } 
-});
-
-document.addEventListener("click", (event) => {
-    if(!dropdown.contains(event.target) && expanded){
-        expandDropDown();
+    if (target === label) {
+        event.preventDefault();
+        dropdown.focus();
     }
 
-});
-
-document.addEventListener("wheel", (event) =>{
-    if(expanded){
-        expandDropDown();
+    if (target === dropdown || event.type === "keydown") {
+        if (event.type === "click" || event.key === "Enter" || event.key === " ") {
+            toggleDropDown();
+        }
     }
-})
 
-window.addEventListener('blur', () => {
-    if(expanded){
-        expandDropDown();
+    if (!dropdown.contains(target) || event.type === "wheel") {
+        if (expanded) {
+            toggleDropDown(false);
+        }
     }
-});
+}
+
+    dropdown.addEventListener("focusout", () => {
+        if (expanded) {
+            toggleDropDown(false);
+        }
+    });
+
+
+document.addEventListener("click", unifiedEventListener);
+document.addEventListener("keydown", unifiedEventListener);
+document.addEventListener("wheel", unifiedEventListener);
+window.addEventListener("blur", unifiedEventListener);
 
 
