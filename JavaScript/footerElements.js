@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
 const dropdown = document.getElementById("subject");
 const moveContent = document.getElementById("move-content");
 const label = document.querySelector("label[for='subject']");
@@ -73,4 +72,5 @@ window.addEventListener('blur', () => {
         expandDropDown();
     }
 });
+
 
