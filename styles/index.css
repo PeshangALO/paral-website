@@ -155,7 +155,7 @@
     #service-categories .textboxes{
         margin: 0 1rem;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
 
 }
@@ -192,8 +192,8 @@
     gap: 3rem;
 }
     #prog-languages .text-box-wrapper{
-    display: flex;
-    justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
 }
 
 #prog-languages h2{
@@ -205,9 +205,10 @@
 
     #prog-languages .logo-text-box {
     padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2rem 2rem;
+    place-items: center;
     }
 
     #prog-languages img{
@@ -215,22 +216,27 @@
         align-content: center;
     }
 
-    #prog-languages p{
-    padding-top: 20px;
+    #prog-languages h6{
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
     }
 
-    #prog-languages mark{
+    #prog-languages p{
     font-weight: normal;
+    font-size: 1rem;
     background-color: transparent;
     color: #525252ab;
     }
 
-    #prog-languages .image-background{
+    .image-background{
     background-color:rgba(167, 167, 167, 0.226);
-    border-radius: 100%
+    border-radius: 100%;
+    margin-bottom: 15px;
+    
     }
+
+
 
 @media (max-width: 1400px){
     #prog-languages{
@@ -252,9 +258,10 @@
     #prog-languages h2{
         font-size: 1.5rem;
     }
-        #prog-languages .text-box-wrapper{
-    display: flex;
-    flex-direction: column;
+    #prog-languages .text-box-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: repeat(3, auto);
 }
 }
 
@@ -277,90 +284,64 @@
         font-weight: 700;
     }
 
-
-    #customer-reviews .reviewboxes{
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 100%;
-        }
-
-        #customer-reviews .review-textbox{
+        .review-textbox{
         display: grid;
-        grid-template-columns: 35px 1fr 100px;
+        grid-template-columns: 1fr 1fr 100px;
         grid-template-rows: 1fr 1fr 1fr;
         align-items: center;
         gap: 0.5rem;
-        padding: 10px;
+        padding: 10px 10px 10px 10px;
         background-color: var(--tertiary-color);
         border-radius: 5px;     
         max-width: 50rem;
     }   
 
-        #customer-reviews .review-textbox img{
+    .review-company-name{
+        grid-column: span 2;
+        display: flex;
+    }
+
+        .review-company-logo{
                 border-radius: 100%;
                 max-width: 35px;
             }
-            #customer-reviews .review-textbox h5{
+            
+            .review-textbox h5{
                 padding-top: 6px;
                 padding-left: 7px;
                 font-size: 15px;
                 font-weight: bolder;
-                line-height: 1.5;
             }
 
-            #customer-reviews .review-textbox h6{
+            .review-textbox h6{
                 grid-column: span 3;
                 font-size: 15px;
             }
 
-            #customer-reviews .review-textbox p{
+            .review-textbox p{
                 grid-column: span 3;
                 font-weight: 500;
             }
 
-            #customer-reviews .review-textbox #star_rating{
-                padding-top: 5px;
+            #star_rating{
+                padding-top: 10px;
                 border-radius: 0%;
-                max-width: 90px;
+                place-self: start center;
             }
 
-    @media (max-width: 1300px) {
-
+    @media (max-width: 800px) {
         #customer-reviews{
-            display: flex;
-            flex-direction: column;
-            align-items: center;        
-        }
-            #customer-reviews .reviewboxes{
-                flex-direction: column;
-                gap: 2rem;
-            }  
-}
-
-
-
-    @media (max-width: 900px) {
-       #customer-reviews{
-            flex-direction: column;
-            }
-            #customer-reviews .reviewboxes{
-            justify-content: center;
-            gap: 1rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
         }
 
 }
 
-    @media(max-width: 500px){          
-            #customer-reviews .reviewboxes h2{
-                margin-left: 1rem;
+
+@media(max-width: 500px){                  
+    #customer-reviews .reviewboxes .review-textbox{
+                grid-template-rows: 35px 10rem 40px;
             }
-            
-            #customer-reviews .reviewboxes .review-textbox{
-                grid-template-rows: 1fr; 
-                gap: 1rem;
-            }
-        
 }
 
 
