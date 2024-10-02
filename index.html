@@ -53,10 +53,11 @@
 <section id="company-description" alt="En beskrivelse av Paral Dynamic.">
         <div class="description-wrapper">
             <h1> Paral Dynamic </h1>
-            <p>Vi spesialiserer oss på å forvandle ideer til kraftfulle digitale løsninger, med tjenester innen avansert AI, maskinlæring og big data-analyser. 
-                Vi samarbeider tett med våre kunder for å skape skreddersydde løsninger som møter deres unike behov og hjelper dem med å nå sine mål. 
-                Med sterk tilknytting til AI. I Kompetansemiljøet i Grimstad er vi perfekt plassert for å levere verdi. 
-                Vårt ekspertteam er klare til å utvikle de perfekte produktene som driver din virksomhet fremover.</p>
+            <p>Vi spesialiserer oss på å forvandle ideer til kraftfulle digitale løsninger,
+                 med tjenester innen avansert AI, maskinlæring og big data-analyser.
+                <span id="read-more-click">...Les mer</span>
+                <span id="read-more-text"></span>
+            </p>
                 <a class="body-button" href='aboutus.html'>Les mer om oss</a>
             </div>
             <img class="paralHead" src="./Images/ParalLogo/ParalLogo.png" alt="Paral Dynamic Bedriftlogo"/>
@@ -113,37 +114,43 @@
             <div class="image-background">
                 <img src="./Images/Icons/wrench_icon.png" alt="picture of a wrench">
             </div>
-            <p>Python<br> <mark>Kunstig Intelligens / Maskin Læring</mark></p>
+            <h6>Python<h6> 
+            <p>Kunstig Intelligens / Maskin Læring</p>
         </div>
         <div class="logo-text-box">
             <div class="image-background">
                 <img src="./Images/Icons/C_icon.png" alt="C...">
             </div>
-            <p>C/C++C#<br><mark>Backend</mark></p>
+            <h6>C/C++C#<h6>
+                <p>Backend</p>
             </div>
         <div class="logo-text-box">
             <div class="image-background">
                 <img src="./Images/Icons/computer_icon.png" alt="picture of a computer">
             </div>
-            <p class="prog_text">JavaScript<br><mark>Frontend</mark></p>
+            <h6>JavaScript<h6>
+                <p>Frontend</p>
         </div>
         <div class="logo-text-box">
             <div class="image-background">
                 <img src="./Images/Icons/wrench_icon.png" alt="picture of a wrench">
             </div>
-            <p>HTML/CSS<br><mark>Frontend</mark></p>
+            <h6>HTML/CSS<h6>
+                <p>Frontend</p>
         </div>
         <div class="logo-text-box">
             <div class="image-background">
                 <img src="./Images/Icons/computer_icon.png" alt="picture of a computer">
             </div>
-            <p>Solidity<br><mark>Blockchain</mark></p>
+            <h6>Solidity<h6>
+                <p>Blockchain</p>
         </div>
         <div class="logo-text-box">
             <div class="image-background">
                 <img src="./Images/Icons/world_icon.png" alt="picture of skeleton of a globe">
             </div>
-            <p>Java<br><mark> Frontend, Backend</mark></p>
+            <h6>Java<h6>
+                <p>Frontend, Backend</p>
         </div>
     </div>
 </section>
@@ -162,14 +169,15 @@
             <h6>-Andreas Madsen, Daglig Leder i GADR.</h6>
         </div>-->
         <div class="review-textbox" alt="Anmeldelse fra Vigi Systems.">
-            <img src="./Images/OtherCompanyLogos/Vigi Systems.jfif" alt="GADR logo">
+            <div class="review-company-name">
+            <img class="review-company-logo" src="./Images/OtherCompanyLogos/Vigi Systems.jfif" alt="GADR logo">
             <h5>Vigi Systems</h5>
+            </div>
             <img id="star_rating" src="./Images/Icons/star_rating.svg" alt="En kundes 5 stjerne-anmeldelse"/>
-            <p>Jeg kom til Paral Dynamic med behov for å utvikle en mobilapplikasjon, og deres faglige kompetanse gjorde dem til den perfekte partneren. De hjalp oss med å gå fra idé til ferdig produkt, og vi er svært fornøyd med resultatet.
+            <p>Jeg kom til Paral Dynamic med behov for å utvikle en mobilapplikasjon, og deres faglige kompetanse gjorde dem til den perfekte partneren. 
+                De hjalp oss med å gå fra idé til ferdig produkt, og vi er svært fornøyd med resultatet.
                  </p>
                 <h6>-Robert Sach, Daglig Leder i Vigi Systems.</h6>
-           
-            
         </div>
     </div>
 </section>
@@ -229,10 +237,9 @@
 
 <script src="/JavaScript/hamburgermenu.js"></script>
 <script src="/JavaScript/activeButton.js"></script>
-<script type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="./JavaScript/footerElements.js"></script>
+<script src="./JavaScript/readMore.js"></script>
 <script type="text/javascript">
 (function(){
   emailjs.init({
