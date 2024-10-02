@@ -105,28 +105,35 @@
 <section id="contact_us">
     <h3>Ta kontakt for en uforpliktende samtale!</h3>
     
-    <!--sondre@paral.no-->
+    <!--kontakt@paral.no-->
     <form onsubmit="sendEmail(); return false;">
         <div class="container"> 
             <label for="name">Navn/Selskap</label>
-            <input type="text" class="form-input" id="name" name="name">
+            <input type="text" class="form-input" id="name" name="name" required>
         </div>
         <div class="container">
             <label for="email">Epostadresse</label>
-                        <input type="email" class="form-input" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
-
+            <input type="email" class="form-input" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
         </div>
-        <div class="container">
-            <label for="subject">Overskrift</label>
-            <input type="message" class="form-input" id="subject" name="subject">
+        <div class="container custom-select-wrapper">
+            <label for="subject">Hva gjelder det?</label>
+            <select name="subject" type="message" class="form-input" id="subject" name="subject" required>
+                <option option selected disabled hidden>Velg et alternativ</option>
+                <option value="Kunstig Intelligens">Kunstig Intelligens</option>
+                <option value="App/Web-utvikling">App/Web-utvikling</option>
+                <option value="Big Data eller Database">Big Data/Database</option>
+                <option value="Maskinlæring">Maskinlæring</option>
+                <option value="Design">Design</option>
+                <option value="Annet">Annet</option>
+            </select>
         </div>
-        <div class="container">
-            <label for="message">Hva gjelder det?</label>
-            <input type="text" class="form-input" id="message" name="message">
+        <div class="container" id="move-content">
+            <label for="message">Fritekst/Melding</label>
+            <input type="text" class="form-input" id="message" name="message" required>    
+            <input type="submit" value="Send Melding">
         </div>
-        <input type="submit" value="Send Melding">
     </form>
-    </section>
+</section>
 
 <section class="social_media">
     <h5>Følg oss på sosiale medier</h5>
