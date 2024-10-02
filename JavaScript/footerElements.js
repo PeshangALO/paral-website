@@ -60,7 +60,7 @@ function unifiedEventListener(event) {
         }
     }
 
-    if (!dropdown.contains(target) || event.type === "wheel") {
+    if (event.type === "wheel") {
         if (expanded) {
             toggleDropDown(false);
         }
