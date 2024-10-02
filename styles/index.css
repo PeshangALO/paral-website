@@ -34,15 +34,15 @@
             justify-content: center;
         }
         
-#read-more-click{
-    color: var(--info-color);
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-#read-more-click:active{
-    color: var(--primary-color-light);
-}
+        #read-more-click{
+            color: var(--info-color);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        
+        #read-more-click:active{
+            color: var(--primary-color-light);
+        }
 
 .button-wrapper{
     margin: 5rem;
