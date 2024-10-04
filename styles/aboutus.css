@@ -66,11 +66,11 @@
         justify-content: flex-start;
     }
 
-.textboxes{
+.values-textboxes{
     margin-top: 1rem;
 }
 
-#the-values .textbox{
+#the-values .values-textbox{
     border: transparent;
     border-left: 2px solid var(--info-color);
     border-radius: 10px;
@@ -80,18 +80,18 @@
     padding-left: 1rem;
     max-width: 70rem;
 }
-    #the-values .textbox h5{
+    #the-values .values-textbox h5{
         font-weight: bold;
         font-size: 20px;
         margin-bottom: 1rem;
     }
-    #the-values .textbox p{
+    #the-values .values-textbox p{
         font-weight: normal;
         padding-bottom: 1rem;
         font-size: 20px
     }
 
-    #the-values .textbox .horizontal-border{
+    #the-values .values-textbox .horizontal-border{
         display: none;
     }
 
@@ -122,7 +122,7 @@
             font-size: 30px;
             margin-bottom: 1rem;
         }
-        #the-values .textbox{
+        #the-values .values-textbox{
             border-left: 0;
             padding: 0;
             margin: 0;
@@ -147,6 +147,8 @@
 /* -----------------------------*/
 /* -------Prosjekt Prosess------*/
 /* ---------------------------- */
+
+
     #project_process h2{
         margin-bottom: 5rem;
         font-size: clamp(1.5rem, 2.5rem, 3rem);
@@ -155,67 +157,131 @@
     }
 
     #project_process .project-description-wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 5rem;
+        display: flex;
+        justify-content: space-evenly;
     }
 
+    .right-column, .left-column{
+        display: flex;
+        flex-direction: column;
+        max-width: 60rem;
+    }
 
+    .right-column{
+    gap: 2rem;
+    }
+    .left-column{
+    gap: 2rem;
+    }
 
-    #project_process .textbox-wrap{
+    #bottom-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    .project-textbox-wrap{
+        cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
-        
+        gap: 0.5rem;
+        max-width: 46rem;
+        height: 100px;
+        border: 1px solid var(--info-color);
+        padding: 5px;
+        border-radius: 10px;
+        transition: height 0.5s ease;
     }
 
-    #project_process .textbox{
+    .project-textbox-wrap:hover{
+        background-color: var(--tertiary-color);
+    }
+
+    .project-textbox-wrap.expanded{
+       height: 200px;
+       transition: height 0.5s ease;
+
+    }
+
+    .project-textbox{
     border: transparent;
     border-left: 1.3px solid var(--info-color);
     border-radius: 0;
     background-color: transparent;
-    padding-left: 1rem;
-    max-width: 495px;
-}
-
-    #project_process .textbox  h5{
-        font-weight: bold;
-        margin-bottom: 2rem;
-        font-size: 20px;
+    max-width: 44rem;
+    padding: 1rem;
+    
         }
-        
-        #project_process .textbox  p{
-        font-weight: normal;
-        padding-bottom: 1rem;
-        font-size: 20px;
-        max-width: 400px;
+
+
+    .project-step-text.expanded{
+    height: 130px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+    padding: 1rem 0;
     }
 
+
+
+    .project-step-text{
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        font-weight: normal;
+        overflow: hidden;
+        font-size: 20px;
+        transition: height 0.5s ease;
+    }
+
+    .project-textbox  h5{
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+        }
+        
+    .project-textbox h5::after{
+            content: "\002B"; 
+            position: absolute;
+            right: 0; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            transition: transform 0.5s;
+    }
+
+    .project-textbox.expanded h5::after {
+        content: "\2212"; /* Unicode minus sign */
+        transition: transform 0.5s;
+    }
 
     #project_process img{
         width: 35px;
         height: 35px;
     }
 
-
+#bottom-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
 /* For smaller screens */
     @media (max-width: 1500px) {
-      
-        #project_process{
-            margin: 0;
-        }
-
-            #project_process .project-description-wrapper{
-                display: grid;
-                grid-template-columns: 1fr 1fr; 
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-            }
-
             #project_process h2{
                 text-align: center;
+            }
+            .project-textbox h5{
+                font-size: 1.1rem;
+            }
+
+            .project-description-wrapper{
+                gap: 2rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
             }
 
 }
@@ -236,28 +302,35 @@
             margin-bottom: 0;
         }
 
-        #project_process .project-description-wrapper{
+        .project-description-wrapper{
             display: flex;
             flex-direction: column;
             gap: 2rem;
             padding: 0;
         }
 
-            #project_process .project-description-wrapper .textbox-wrap{
+            .project-description-wrapper .project-textbox-wrap{
                 flex-direction: column;
                 gap: 1rem;
             }
 
-                #project_process .project-description-wrapper .textbox-wrap .textbox{
+                .project-textbox-wrap .project-textbox{
                     border-top: 1.3px solid var(--info-color);
                     border-left: 0;
                     padding-top: 1rem; 
                 }
 
+                #bottom-row .project-textbox-wrap{
+                    flex-direction: column;
+                }
 
 }
 
 @media (max-width: 800px) {
+    #project_process{
+        margin-top: 5rem;
+    }
+
         #project_process .project-description-wrapper { 
         display: flex; 
         flex-direction: column;
@@ -271,7 +344,7 @@
         #project_process h2{
             flex-wrap: wrap; 
         }
-        #project_process .textbox-wrap{
+        #project_process .project-textbox-wrap{
             flex-direction: column;
         }
 
@@ -281,30 +354,67 @@
 
 @media (max-width: 500px){
     #project_process { 
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
         
-        #project_process h2{
-            margin-bottom: 1rem;
-            margin-top: 5rem;
-        }
+     #project_process h2{
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+    }
 
-        #project_process .project-description-wrapper{
-            padding: 0;
-        }
 
-            #project_process .project-description-wrapper .textbox-wrap{
-                width: 90%;
-            }
+    .project-textbox h5{
+        text-align: center;
+    }
+
+    .project-description-wrapper .project-textbox-wrap{
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+        }
             
-                #project_process .project-description-wrapper .textbox-wrap .textbox{
-                border-top: 1.3px solid var(--info-color);
-                border-left: 0;
-                width: auto;
-                }
+        #bottom-row .project-textbox-wrap{
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+        }
+        .project-textbox-wrap{
+            height: 150px;
+        }
+
+
+    .project-textbox-wrap .project-textbox{
+        border-top: 1.3px solid var(--info-color);
+    }
+
+    .project-textbox h5::after{
+        content: "\002B"; 
+        position: absolute;
+        top: 100%; 
+        right: 50%;
+        transform: translateX(10%);
+        transition: transform 0.5s;
+}
+
+.project-textbox-wrap.expanded{
+    height: 100%;
+}
+
+.project-textbox.expanded h5::after {
+    content: "\2212"; 
+    transition: transform 0.5s;
+}
+
+.project-step-text{
+    transition: none;
+}
+
+.project-step-text.expanded{
+    height: 100%;
+}
+
+
 }
 
 
