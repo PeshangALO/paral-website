@@ -1,9 +1,8 @@
 let readMore = document.getElementById("read-more-click");
 let readMoreText = document.getElementById("read-more-text");
-
-readMore.addEventListener("click", () => {
 let wishToRead = false;
 
+const toggleReadMore = function (){
     if(!wishToRead){
         wishToRead = true;
         readMore.innerHTML = "";
@@ -15,5 +14,16 @@ let wishToRead = false;
         wishToRead = false;
         readMoreText.innerHTML = "";
     }
+};
 
+readMore.addEventListener("click", toggleReadMore);
+
+readMore.addEventListener("keydown", (event) => { 
+    if(event.key === "Enter"){
+        toggleReadMore();
+    }
 });
+
+
+
+
