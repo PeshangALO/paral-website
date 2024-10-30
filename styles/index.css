@@ -1,5 +1,5 @@
 #company-description {
-    margin-top: 50px;
+    margin-top: 8rem;
     display: flex;
     gap: 5rem;
     justify-content: space-evenly;
@@ -56,6 +56,12 @@
     flex-direction: column;
     gap: 0rem;
     }  
+}
+
+@media(max-width: 1000px){
+    #company-description {
+        margin-top: 5rem;
+    }
 }
 
 

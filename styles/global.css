@@ -71,7 +71,16 @@ p, h1, h2, h3, h4, h5, h6{
 /*------------Logo & Navbar------------*/
 /*-------------------------------------*/
 
-
+#desktop-nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 5px 25px rgb(185, 185, 185);
+}
 
 li{
     list-style: none;
@@ -79,11 +88,6 @@ li{
     display: inline-block;
 }
 
-#desktop-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 nav #navLogo{
     width: 5rem;
@@ -115,6 +119,7 @@ nav .navbutton:hover{
 nav .active{
     background-color: var(--primary-color);
     color: white;
+    box-shadow: 0px 5px 5px rgb(185, 185, 185);
 }
 
 nav a{
