@@ -21,11 +21,26 @@ document.addEventListener("DOMContentLoaded", () => {
             activeButton = button;
             localStorage.setItem("activeButtonIndex", index);
         });
+
+        button.addEventListener("keydown", (event) =>{
+            switch(event.key){
+                case 'ArrowRight':
+                    event.preventDefault();
+                        const nextItem = navButtons[(index + 1) % navButtons.length];
+                    nextItem.focus();
+                    break;
+                case 'ArrowLeft':
+                    event.preventDefault();
+                        const prevItem = navButtons[(index - 1 + navButtons.length) % navButtons.length];
+                    prevItem.focus();
+                    break;
+            };  
+        });
     });
 
     if(!foundPage){
         navButtons[0].classList.add("active");
-    }
+    };
 });
 
 

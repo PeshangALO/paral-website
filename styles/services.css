@@ -60,6 +60,7 @@ margin: 3rem 0;
 
 @media(max-width: 800px){
     #section-title{
+        padding-top: 8rem;
         flex-direction: column;
     }
 
