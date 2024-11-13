@@ -117,6 +117,12 @@ nav .navbutton:hover{
     transition: 0.2s;
 }
 
+.navbutton:focus{
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.1s;
+}
+
 nav .active{
     background-color: var(--primary-color);
     color: white;
