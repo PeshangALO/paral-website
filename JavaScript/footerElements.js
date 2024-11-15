@@ -15,7 +15,7 @@ function sendEmail(){
 document.addEventListener("DOMContentLoaded", function() {
     const currentYear = new Date().getFullYear();
     const copyrightElement = document.getElementById("copyright");
-    copyrightElement.innerHTML = ` <h3> &copy; ${currentYear} Paral Dynamics. All Rights Reserved. </h3>`;
+    copyrightElement.innerHTML = ` <h3> &copy; ${currentYear} Paral Dynamic. All Rights Reserved. </h3>`;
 });
 
 
