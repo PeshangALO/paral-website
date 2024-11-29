@@ -216,6 +216,7 @@ nav a{
     
 form{
     margin-top: 5rem;
+    margin-right: 1rem;
 }
     
 form label{
@@ -247,6 +248,7 @@ form .form-input {
 
     .container{
         margin-bottom: 2rem;
+
     }
 
     #move-content{
@@ -258,7 +260,10 @@ form .form-input {
     font-size: 16px;
 }
 
-
+#message{
+height: 100px;
+resize: none;
+}
 
 @media (max-width: 1000px) {
     #contact_us {
